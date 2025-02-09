@@ -1,204 +1,117 @@
 ---
-layout: sig
-title: "Documentation"
-section: sigs
-sigId: "docs"
-logo: /images/logos/needs-you/Jenkins_Needs_You-02.png
-opengraph:
-  image: /images/logos/needs-you/Jenkins_Needs_You-02.png
+layout: project
+title: "Google Season of Docs in Jenkins"
+section: projects
+sig: docs
 tags:
-  - docs
-  - docs_sig
-  - documentation
-leads:
-- "markewaite"
-participants:
-- "oleg_nenashev"
-- "tracymiranda"
-- "kwhetstone"
-- "stackscribe"
-- "vsilverman"
-- "linuxsuren"
+- gsod
+- docs
+- docs-sig
+opengraph:
+  image: /images/gsod/gsod_opengraph.png
 links:
-  gitter: "jenkinsci/docs"
-  googlegroup: "jenkinsci-docs"
-  meetings: "https://docs.google.com/document/d/1uNNo0QJKPHnNp8PGr_jLI8p3K_94ZYD-M0evZOEZ93c/edit#"
-overview: >
-  This special interest group improves Jenkins use and adoption through documentation.
-  The SIG encourages, creates, and reviews documentation contributions and improves documentation with contributors and external communities.
+  meetings: "/sigs/docs/gsod/#office-hours"
 ---
 
-The SIG offers a venue for all kinds of documentation creation, improvement, and delivery.
+image:/images/gsod/gsod.png[Google Season of Docs, role=center, float=right]
 
-The group focuses on documentation for Jenkins, including:
+The https://developers.google.com/season-of-docs/[Google Season of Docs (GSoD)]
+program brings together open source and technical writers communities for the benefit of both.
+The program raises awareness of open source, of docs, and of technical writing.
+GSoD in Jenkins is organized by the link:/sigs/docs[Documentation special interest group].
 
-* link:/doc/[User documentation] - Using Jenkins
-** link:/doc/tutorials[Tutorials]
-** link:/doc/book/[User Handbook]
-** References like link:/doc/book/pipeline/syntax/[Pipeline Syntax] and link:/doc/pipeline/steps/[Pipeline Steps]
-** link:/participate/how-to-guides/[How-to Guides]
-* link:/doc/developer/[Developer documentation] - Extending Jenkins
-** link:/doc/developer/tutorial/[Tutorials]
-** link:/doc/developer/book/[Developer Reference]
-** link:/doc/developer/guides/[How-To Guides]
-* link:/solutions[Solution documentation] - using Jenkins with specific technologies (e.g. Java, PHP, or Docker).
-  Also, implementation solutions like link:/solutions/pipeline[Pipeline]
+== Project Ideas
 
-Documentation SIG may cooperate with other groups.
-For example, we will be cooperating with the link:/sigs/cloud-native[Cloud-Native Jenkins SIG]
-on topics related to Cloud-Native documentation efforts and
-with the link:/sigs/platform[Platform SIG].
-on platform topics.
+Significant documentation project opportunities are listed in the link:/sigs/docs/gsod/ideas[Google Season of Docs project ideas].
 
-== Topics
+== Getting started
 
-* Creating new documentation
-* Improving existing documentation
-* Reviewing documentation contributions
-* Coordinating documentation initiatives
-* Reviewing Jenkins Enhancement Proposals (JEPs) related to documentation
+If you are interested to participate in Google Season of Docs as a technical writer, please do the following:
 
-== Contributing
+. Join our link:https://app.gitter.im/#/room/#jenkins/docs:matrix.org[Gitter Channel].
+. Explore the project ideas listed on this page, find areas which would be interesting to you.
+. Try link:/participate/document/[contributing to Jenkins documentation] to study our documentation tools and contribution process.
+  There are some link:/participate/document/#newcomers[newcomer-friendly documentation tasks] you could try.
+. If you start exploring the project before May 29, consider joining our link:/events/online-hackfest/2020-uiux/[UI/UX hackfest] which includes the link:/events/online-hackfest/2020-uiux/#user-documentation[user documentation track].
+  It is a good opportunity to get know the community better.
+. Send an introductory email to our mailing list. Please include a short self-introduction and list projects which would be interesting to you.
 
-See link:/participate/document[this page] for information about contributing to Jenkins documentation.
-It contains links for newcomer and seasoned contributors.
-If you have any questions or ideas, please feel free to reach out to us using the channels listed on the right panel.
+== Team
 
-[[ongoing-projects]]
-== Projects
+* Org admins:
+  link:/blog/authors/oleg_nenashev/[Oleg Nenashev],
+  link:/blog/authors/markewaite/[Mark Waite]
+* Potential mentors:
+  link:/blog/authors/markewaite/[Mark Waite],
+  link:/blog/authors/kwhetstone/[Kristin Whetstone],
+  link:/blog/authors/oleg_nenashev/[Oleg Nenashev],
+  Vivek Sonar
+* Documentation SIG link:/sigs/docs/#members[members] and component maintainers assist as their time allows (link:/blog/authors/halkeye/[Gavin Mogan] and Meg McRoberts)
 
-This section lists some of the projects working under the direction of this SIG.
-See the link:https://docs.google.com/document/d/1uNNo0QJKPHnNp8PGr_jLI8p3K_94ZYD-M0evZOEZ93c/edit?usp=sharing[SIG meeting notes] for more information about ongoing projects.
+== Technology and tools
 
-=== Google Season of Docs
+For all new documentation projects we are using the link:https://www.writethedocs.org/guide/docs-as-code/[Documentation as Code approach]
+when documentation is developed using markup languages and stored in source control management (SCM) systems.
+Here are the common tools we use:
 
-Google Season of Docs brings together open source communities and technical writers for the benefit of both.
-The program raises awareness of open source, of documentation, and of technical writing.
+* Markdown languages: link:https://asciidoctor.org/[AsciiDoc] and link:https://github.github.com/gfm/[GitHub Flavored Markdown]
+** For example, this page is written in Asciidoc.
+   You can find its sources link:https://github.com/jenkins-infra/jenkins.io/blob/master/content/sigs/docs/gsod/index.adoc[here].
+* SCM: link:https://git-scm.com/[Git]
+* Source Code Hosting: link:http://github.com/[github.com]
+* Text editing: any text editor with AsciiDoc/Markdown support (e.g. link:https://code.visualstudio.com/[Visual Studio Code], link:https://notepad-plus-plus.org/[Notepad++]) or a specialized IDE
 
-The Jenkins project has been accepted to link:https://developers.google.com/season-of-docs/docs/participants[Google Season of Docs (GSoD) 2020].
-The link:https://developers.google.com/season-of-docs/docs/participants/project-jenkins-zaycodes[Jenkins on Kubernetes project] is the 2020 Google Season of Docs project for Jenkins.
-See our link:/sigs/docs/gsod[Google Season of Docs status page] for documentation project ideas, contact information, and more.
+Particular components may also require additional tools for documentation development.
+For example, the jenkins.io website requires Docker for being built and tested locally.
+In such cases we document usage of these tools in link:https://github.com/jenkins-infra/jenkins.io/blob/master/CONTRIBUTING.adoc[our contributing guidelines] and help newcomer maintainers if needed.
 
-[[jenkins-on-kubernetes]]
-==== Jenkins on Kubernetes - GSoD 2020
-Jenkins on Kubernetes is the Google Season of Docs project selected for 2020.
-Jenkins on Kubernetes is a popular theme of Jenkins Meetups and presentations at conferences.
-The Jenkins on Kubernetes project will describe the concepts, techniques, and choices for Kubernetes users running Jenkins.
-The project can refer to existing information from:
-* GSOD selected project (link:/sigs/docs/gsod/2020/projects/document-jenkins-on-kubernetes[Document Jenkins on Kubernetes] by link:/blog/authors/zaycodes[Zainab Abubakar])
-* Jenkins online meetups (like
-link:https://www.youtube.com/watch?v=h4hKSXjCqyI[Jenkins on Kubernetes: Getting Started])
-* Cloud providers (like
-link:https://cloud.google.com/solutions/jenkins-on-kubernetes-engine[Google Cloud Platform],
-link:https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/container-cicd-using-jenkins-and-kubernetes-on-azure-container-service[Microsoft Azure],
-link:https://developer.ibm.com/technologies/containers/tutorials/deploy-and-run-jenkins-on-kubernetes-in-the-cloud/[IBM Cloud], and
-link:https://blogs.oracle.com/cloud-infrastructure/deploy-jenkins-on-oke[Oracle Cloud Platform])
-* Training labs (like
-link:https://www.qwiklabs.com/focuses/1104?parent=catalog[Google Cloud self-paced labs])
-* System providers (like
-link:https://code.vmware.com/samples/5160/Jenkins-CICD-Integration-with-PKS-provisioned-Kubernetes-Clusters[VMWare] and
-link:https://rancher.com/blog/2018/2018-11-27-scaling-jenkins/[Rancher])
-* Infrastructure as a Service providers (like
-link:https://platform9.com/blog/kubernetes-for-ci-cd-at-scale/[Platform9])
-* SCM providers (like
-link:https://bitbucket.org/blog/setting-up-a-ci-cd-pipeline-with-spring-mvc-jenkins-and-kubernetes-on-aws[Bitbucket])
-* link:https://kubernetes.io/blog/2018/04/30/zero-downtime-deployment-kubernetes-jenkins/[Kubernetes project]
-=== Plugin site integration with GitHub
+== Contacts
 
-link:https://plugins.jenkins.io/[Jenkins Plugin Site] currently uses Jenkins update center and link:https://wiki.jenkins.io/[Jenkins Wiki] as a main source of information to be displayed on the website.
-We have recently added support of plugin documentation from GitHub (link:https://groups.google.com/forum/#!topic/jenkinsci-dev/VSdfVMDIW-A[announcement]), 
-but there are still many improvement areas: visualizing changelogs, pulling plugin tags and maintainers list from GitHub, etc.
-This project is tracked in the jira:WEBSITE-637[] EPIC.
+We use the link:/sigs/docs[Documentation SIG] communication channels for GSoD project discussions during the application phases.
 
-Useful links:
+* link:https://app.gitter.im/#/room/#jenkins/docs:matrix.org[Gitter Channel]
+* link:/sigs/docs/#meetings[Regular SIG meetings]
 
-* link:/doc/developer/publishing/documentation/[Publishing Plugin Documentation]
-* link:https://github.com/jenkins-infra/plugin-site[Plugin Site Frontend]
-* link:https://github.com/jenkins-infra/plugin-site-api[Plugin Site Backend] (exposes REST API for the frontend)
-* link:https://github.com/jenkins-infra/update-center2[Jenkins Update Center] (serves plugin metadata)
-* link:https://issues.jenkins.io/issues/?jql=project%20%3D%20WEBSITE%20AND%20component%20%3D%20plugin-site%20AND%20labels%20%3D%20newbie-friendly%20and%20status%20in%20(Open%2C%20Reopened%2C%20%22To%20Do%22)[Newbie-friendly issues for the plugin site]
-* jira:JENKINS-59467[Template issue for plugin documentation migration to GitHub] (newbie-friendly)
+Once the projects are announced, other project-specific channels may be created as needed.
 
-=== Plugin documentation on GitHub
+== Additional Information
 
-Currently the SIG is migrating plugin documentation from https://wiki.jenkins.io/ to GitHub.
-Documentation in the plugin GitHub repository provides a good user experience for Jenkins users seeking documentation. 
-At the same time, plugin maintainers now can follow the documentation-as-code approach and make documentation changes a part of the pull requests. 
-It also gives an opportunity to review the documentation changes and to add documentation contributor recognition, 
-especially if the story is combined with link:https://github.com/jenkinsci/.github/blob/master/.github/release-drafter.adoc[changelog automation]. 
+=== Technical writers
 
-We have more than 300 plugins which already use GitHub as a documentation source,
-but there are still hundreds of plugins to migrate.
-We invite contributors to participate in the project and to help us with migrating the docs.
-It is also a great opportunity to update and copy-edit the documentation.
+* link:/participate/document/[Contributing to Jenkins documentation]
+* link:https://developers.google.com/season-of-docs/docs/tech-writer-guide[GSoD Technical Writer guide]
+* link:https://developers.google.com/season-of-docs/docs/timeline[GSoD Timeline]
 
-Useful links:
+=== Mentors
 
-* link:/blog/2019/10/21/plugin-docs-on-github/[Documentation migration guidelines blog post]
-* jira:JENKINS-59467[Template issue for plugin documentation migration to GitHub]
-* link:https://groups.google.com/forum/#!topic/jenkinsci-dev/VSdfVMDIW-A[Announcement in the developer mailing list]
-* link:/doc/developer/publishing/documentation/#plugin-pages[Using GitHub as a source of plugin documentation]
+* link:https://developers.google.com/season-of-docs/docs/timeline[GSoD Timeline]
+* link:https://developers.google.com/season-of-docs/docs/project-selection[Selecting projects]
+* link:https://developers.google.com/season-of-docs/docs/tech-writer-collaboration[Working with a technical writer]
 
-[[user-guide]]
-=== User Guide Rework
+=== Office Hours
 
-Jenkins user topics are included in the current link:/doc/book[Jenkins Handbook].
-link:https://docs.google.com/spreadsheets/d/1nA8xVOkyKmZ8oTYSLdwjborT0w-BpBNNZT0nxR9deZ8/edit#gid=1087292709[Feedback requests] are frequently received to improve user documentation.
-Common improvement themes include adding migration of the documentation from Wiki, pipeline examples with each of the pipeline steps, additional tutorials for new users, better search and navigation.
-
-Links: 
-
-* link:https://github.com/jenkins-infra/jenkins.io/projects/1[GitHub Project]
-
-[[administrator-guide]]
-=== Administrator Guide
-
-Jenkins administration topics are included in the current link:/doc/book[Jenkins Handbook].
-Navigation can be improved for administrators by separating the administration topics into a separate volume.
-This project will create a separate Jenkins Administrator Guide with content specific for administrators.
-This project is tracked in the jira:WEBSITE-738[] EPIC.
-
-[[solution-pages]]
-=== Solution Pages
-
-Jenkins link:/solutions/[solution pages] highlight specific use cases for Jenkins users.
-Those solutions include SCM provider solutions (link:/solutions/github[GitHub], link:/solutions/bitbucketserver[Bitbucket]),
-programming language solutions (link:/solutions/python[Python], link:/solutions/ruby[Ruby], link:/solutions/c[C/C++], link:/solutions/java[Java], and link:/solutions/php[PHP]),
-and execution environment solutions (link:/solutions/python[Pipeline], link:/solutions/docker[Docker], link:/solutions/embedded[Embedded], and link:/solutions/android[Android]).
-An excellent link:/solutions/[opening page] has been provided by link:https://github.com/zbynek[Zbynek Konecny].
-Additional use cases and user stories are being collected by link:https://github.com/alyssat[Alyssa Tong].
-
-The appearance and navigation of those solution pages needs improvement.
-The existing pages should be revisited and improved so that users of specific solutions can find what they need on jenkins.io.
-This project is tracked in the jira:WEBSITE-742[] EPIC.
-
-=== Documentation Reviews
-
-* Reviewing Jenkins documentation link:https://issues.jenkins.io/secure/Dashboard.jspa?selectPageId=18640[bug reports]
-* Identifying link:https://issues.jenkins.io/issues/?jql=project%20%3D%20%22Jenkins%20Website%22%20and%20status%20!%3D%20done%20and%20labels%20%3D%20newbie-friendly%20ORDER%20BY%20%20%20type%20asc%2C%20status%2C%20updatedDate[newbie-friendly documentation bug reports]
-* Reviewing Jenkins documentation link:https://github.com/jenkins-infra/jenkins.io/pulls[pull requests]
-* Reviewing Jenkins X documentation link:https://github.com/jenkins-x/jx-docs/pulls[pull requests]
-* link:https://plugins.jenkins.io/[Plugins site] improvements
-
-== Office Hours
-
-Documentation office hours are held on demand each Monday at *22:00 UTC* and each Thursday at *14:00 UTC*.
-Office hours are conducted and recorded using Zoom and archived to the link:https://www.youtube.com/user/jenkinsci[Jenkins YouTube channel] in the link:https://www.youtube.com/playlist?list=PLN7ajX_VdyaNp0lk5BmyAgqPS52u_4tC8[Jenkins Docs SIG YouTube playlist].
-Participant links are posted in the link:https://gitter.im/jenkinsci/docs[SIG Gitter Chat] 10 minutes before the meeting starts.
-
-== Meetings
-
-The Documentation SIG meets on the fourth Friday of each month at *13:00 UTC*.
-See the link:/event-calendar/[Jenkins Event Calendar] for the schedule and the meeting link.
-At these meetings we discuss projects, share presentations, and demonstrate new capabilities.
+Documentation office hours are held each Tuesday at *01:30 UTC* (Asia and US West) and each Thursday at *15:00 UTC* (Europe and US East).
 Meetings are conducted and recorded using Zoom and archived to the link:https://www.youtube.com/user/jenkinsci[Jenkins YouTube channel] in the link:https://www.youtube.com/playlist?list=PLN7ajX_VdyaNp0lk5BmyAgqPS52u_4tC8[Jenkins Docs SIG YouTube playlist].
-Participant links are posted in the link:https://gitter.im/jenkinsci/docs[SIG Gitter Chat] 10 minutes before the meeting starts.
+Participant links are posted in the link:https://app.gitter.im/#/room/#jenkins/docs:matrix.org[SIG Gitter Chat] 10 minutes before the meeting starts.
+Participant links are also available in the link:/events[Jenkins event calendar].
 
-=== Meeting Agendas
+[#archive]
+== Previous years
 
-Meeting agendas and meeting notes for the SIG are posted in link:https://docs.google.com/document/d/1uNNo0QJKPHnNp8PGr_jLI8p3K_94ZYD-M0evZOEZ93c[this Google Document].
-Anyone is welcome to add a topic for an upcoming meeting by suggesting a change in the link:https://docs.google.com/document/d/1uNNo0QJKPHnNp8PGr_jLI8p3K_94ZYD-M0evZOEZ93c[agenda].
+[[GSoD-2021]]
+* **GSoD 2021** - not accepted
++
+The Docs SIG link:/sigs/docs/gsod/2021/organization-proposal/[organization proposal] as a mentoring organization in Google Season of Docs 2021 was declined.
+See the link:https://docs.google.com/document/d/1WaOB2_ekdDzUOGIqi60USCbaV7oNpBtQZtByB7LZwC8/edit?usp=sharing[retrospective] for future improvements.
 
-++++
-<iframe src="https://docs.google.com/document/d/1uNNo0QJKPHnNp8PGr_jLI8p3K_94ZYD-M0evZOEZ93c?embedded=true" width="100%" height="600px"></iframe>
-++++
+[[GSoD-2020]]
+* **link:/sigs/docs/gsod/2020/[GSoD 2020]** link:/sigs/docs/gsod/2020/projects/document-jenkins-on-kubernetes[Document Jenkins on Kubernetes] by link:/blog/authors/zaycodes[Zainab Abubakar]
++
+The Jenkins project was a mentoring organization in Google Season of Docs 2020.
+The writing project started September 14, 2020 and concluded November 30, 2020.
+See the link:/blog/2020/12/04/gsod-project-report/[project report] by link:/blog/authors/zaycodes[Zainab Abubakar] for details of
+the writing project and our first experience as a Google Season of Docs mentoring organization.
+
+* **GSoD 2019** - not accepted
+(link:https://docs.google.com/document/d/1ighqWo7gIDCnLQ-b6FouQKz-fvmHsnTsMfqBh_mVNbI/edit?usp=sharing[application form and project ideas],
+link:https://docs.google.com/document/d/1uNNo0QJKPHnNp8PGr_jLI8p3K_94ZYD-M0evZOEZ93c/edit#heading=h.g4afeqolzwpj[retrospective])
